@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "phone": "123456789",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "loginStatus": false,
+      "signupStatus": false,
+      "dose1": {
+        "hospital": "admin",
+        "date": "admin",
+        "vaccineName": "admin",
+        "status": "admin"
+      },
+      "dose2": {
+        "hospital": "admin",
+        "date": "admin",
+        "vaccineName": "admin",
+        "status": "admin"
+      }
+    },
+    {
+      "id": 2,
+      "name": "testuser1",
+      "phone": "111222333",
+      "email": "tu1@gmail.com",
+      "password": "tu1",
+      "loginStatus": false,
+      "signupStatus": true,
+      "dose1": {
+        "hospital": "Manipal Hospital",
+        "date": "12 Jan 2022",
+        "vaccineName": "Covaxin",
+        "status": "done"
+      },
+      "dose2": {
+        "hospital": "",
+        "date": "",
+        "vaccineName": "",
+        "status": ""
+      }
+    },
+    {
+      "id": 3,
+      "name": "testuser2",
+      "phone": "444555666",
+      "email": "tu2@gmail.com",
+      "password": "tu2",
+      "loginStatus": false,
+      "signupStatus": true,
+      "dose1": {
+        "hospital": "",
+        "date": "",
+        "vaccineName": "",
+        "status": ""
+      },
+      "dose2": {
+        "hospital": "",
+        "date": "",
+        "vaccineName": "",
+        "status": ""
+      }
+    }
+  ]
+}

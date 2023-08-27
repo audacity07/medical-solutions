@@ -1,13 +1,20 @@
-import {
-  Box,
-  Flex,
-  Spacer,
-  Image,
-  ButtonGroup,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Flex, Spacer, Image, ButtonGroup } from "@chakra-ui/react";
+import { useContext } from "react";
+import { AuthContext } from "../contexts/authContext";
+import { Login } from "./loginButton";
+import { Signup } from "./signupButton";
 
 export function Navbar() {
+  const { isAuth, login, logout } = useContext(AuthContext);
+
+  function handleLogin() {
+    console.log("login");
+  }
+
+  function handleLogout() {
+    console.log("logout");
+  }
+
   return (
     <Box as="navbar" position="relative" zIndex="1">
       <Box
@@ -32,12 +39,8 @@ export function Navbar() {
           </Box>
           <Spacer />
           <ButtonGroup gap="2">
-            <Button backgroundColor="#97E7FE" color="#B76F49">
-              Log in
-            </Button>
-            <Button backgroundColor="#97E7FE" color="#B76F49">
-              Sign Up
-            </Button>
+            <Login />
+            <Signup />
           </ButtonGroup>
         </Flex>
       </Box>
