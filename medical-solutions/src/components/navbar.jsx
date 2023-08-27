@@ -35,7 +35,7 @@ export function Navbar() {
           // p="5px 50px 5px 50px"
         >
           <Box>
-            <Image src="logo4.png" alt="logo" w="80px" borderRadius="20px" />
+            <Image src="logo.png" alt="logo" w="80px" borderRadius="20px" />
           </Box>
           <Spacer />
           <ButtonGroup gap="2">
