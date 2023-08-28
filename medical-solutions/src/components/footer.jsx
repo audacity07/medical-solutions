@@ -17,8 +17,13 @@ export function Footer() {
           </Flex>
 
           {/* right container */}
-          <Flex gap="20" color="gray">
-            <Flex gap="4" direction="column">
+          <Flex
+            width="45%"
+            color="gray"
+            justify="space-between"
+            wrap={{ base: "wrap", md: "wrap" }}
+          >
+            <Flex gap="4" direction="column" flex={{ base: 1, md: "auto" }}>
               <Heading fontSize="3xl" color="#013442">
                 About
               </Heading>
@@ -26,7 +31,7 @@ export function Footer() {
               <Text>Features</Text>
               <Text>News & Blog</Text>
             </Flex>
-            <Flex gap="4" direction="column">
+            <Flex gap="4" direction="column" flex={{ base: 1, md: "auto" }}>
               <Heading fontSize="3xl" color="#013442">
                 Company
               </Heading>
@@ -34,7 +39,7 @@ export function Footer() {
               <Text>Capital</Text>
               <Text>Security</Text>
             </Flex>
-            <Flex gap="4" direction="column">
+            <Flex gap="4" direction="column" flex={{ base: 1, md: "auto" }}>
               <Heading fontSize="3xl" color="#013442">
                 Support
               </Heading>
