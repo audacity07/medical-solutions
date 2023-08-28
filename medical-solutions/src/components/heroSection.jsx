@@ -6,32 +6,12 @@ import {
   Center,
   Text,
   Image,
-  Button,
   Heading,
-  useToast,
 } from "@chakra-ui/react";
 import { FaStar, FaShield } from "react-icons/fa6";
-import { BiSolidTimeFive } from "react-icons/bi";
-import { useContext } from "react";
-import { AuthContext } from "../contexts/authContext";
+import { Schedule } from "./scheduleButton";
 
 export function HeroSection() {
-  const { isAuth } = useContext(AuthContext);
-  const toast = useToast();
-
-  function handleClick() {
-    if (isAuth === false) {
-      toast({
-        position: "top",
-        title: "Account not found.",
-        description: "Create an account before scheduling",
-        status: "error",
-        duration: 2000,
-        isClosable: true,
-      });
-    }
-  }
-
   return (
     <Box mb="20" mt="10" color="#013442">
       <Flex>
@@ -62,17 +42,7 @@ export function HeroSection() {
             </Flex>
             <Spacer />
             <Spacer />
-            <Button
-              backgroundColor="#97E7FE"
-              h="50"
-              w="30"
-              onClick={handleClick}
-            >
-              <Flex gap="3">
-                <BiSolidTimeFive fontSize="22" />
-                <Text>Schedule your vaccinations</Text>
-              </Flex>
-            </Button>
+            <Schedule />
           </Flex>
         </Flex>
 

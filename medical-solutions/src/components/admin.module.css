@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.mainOuterContainer {
+  display: flex;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+  background-color: #f6f7f8;
+}
+
+/* left container */
+
+.leftContainer {
+  width: 25%;
+  position: fixed;
+  height: 95vh;
+  /* margin: 1% 1%; */
+  left: 1%;
+  top: 2.5%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.leftContainer .logoContainer {
+  width: 80px;
+  height: 80px;
+  margin: 5% 0 7% 0%;
+}
+
+.leftContainer .logoContainer img {
+  width: 100%;
+}
+
+.adminCard {
+  display: flex;
+  margin: 5% 5% 10% 5%;
+  gap: 10%;
+  padding: 5%;
+  background-color: #edeff1;
+  border-radius: 10px;
+}
+
+.adminCard .adminImageContainer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.adminCard .adminImageContainer img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.adminCard h4 {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+}
+
+.adminOptions {
+  margin: 0 5% 0 5%;
+  background-color: #edeff1;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #637381;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 5% 0 5% 5%;
+}
+
+.adminOptions .userCard {
+  display: flex;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.adminOptions .userCard .userIcon i {
+  font-size: 23px;
+}
+
+.adminOptions a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.adminOptions .destinationCard {
+  display: flex;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.adminOptions .destinationCard .destinationIcon i {
+  font-size: 23px;
+}
+
+/* end of left container */
+
+/* right container */
+.rightContainer {
+  position: fixed;
+  left: 30%;
+  top: 2.5%;
+  right: 2.5%;
+  height: 95vh;
+  overflow: auto;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+
+.rightContainer .infoNewUserButton {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 2% 3% 2%;
+}
+
+.rightContainer .infoNewUserButton button {
+  padding: 1.2%;
+  border-radius: 5px;
+  background-color: #2065d1;
+  color: white;
+  border: none;
+  font-size: 18px;
+  box-shadow: rgba(32, 101, 209, 0.24) 0px 8px 16px 0px;
+  cursor: pointer;
+}
+
+.rightContainer .infoNewUserButton button .insideButton {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightContainer .userTable {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 0 2%;
+}
+
+.rightContainer .userTable .searchCard {
+  display: flex;
+  padding: 3% 0;
+  gap: 14px;
+  align-items: center;
+  font-size: 22px;
+}
+
+.rightContainer .userTable .searchCard input {
+  font-family: "Public Sans", sans-serif;
+  font-size: 19px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(218, 214, 214);
+  padding-bottom: 5px;
+}
+
+/* actual table */
+
+.userTable table .heading .headRow {
+  background-color: #f4f6f8;
+}
+
+.userTable table .heading .headRow th {
+  width: 200px;
+  padding: 18px 0;
+}
+
+.userTable table .bodyContainer {
+  text-align: center;
+}
+
+.userTable table .bodyContainer .tableRow td {
+  padding: 18px 0;
+}
+
+.userTable table .bodyContainer .tableRow td .editButton {
+  border: none;
+  background-color: #dcf1d7;
+  color: #229a16;
+  font: inherit;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: not-allowed;
+}
+
+.userTable table .bodyContainer .tableRow td .deleteButton {
+  border: none;
+  background-color: #f7dbdb;
+  color: #b72136;
+  font: inherit;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  border: none;
+  font: inherit;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* end of actual table */
+/* end of right container */
+
+.pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 18px;
+  gap: 3%;
+}
+
+.pagination button {
+  font: inherit;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #637381;
+  background-color: #edeff1;
+}
