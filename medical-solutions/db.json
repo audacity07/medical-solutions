@@ -30,16 +30,16 @@
       "loginStatus": false,
       "signupStatus": true,
       "dose1": {
-        "hospital": "Manipal Hospital",
-        "date": "12 Jan 2022",
-        "vaccineName": "Covaxin",
-        "status": "done"
+        "hospital": "",
+        "date": "",
+        "vaccineName": "",
+        "status": false
       },
       "dose2": {
         "hospital": "",
         "date": "",
         "vaccineName": "",
-        "status": ""
+        "status": false
       }
     },
     {
@@ -54,14 +54,77 @@
         "hospital": "",
         "date": "",
         "vaccineName": "",
-        "status": ""
+        "status": false
       },
       "dose2": {
         "hospital": "",
         "date": "",
         "vaccineName": "",
-        "status": ""
+        "status": false
       }
+    },
+    {
+      "name": "testuser3",
+      "phone": "777888999",
+      "email": "tu3@gmail.com",
+      "password": "tu3",
+      "loginStatus": false,
+      "signupStatus": true,
+      "dose1": {
+        "hospital": "",
+        "date": "",
+        "vaccineName": "",
+        "status": false
+      },
+      "dose2": {
+        "hospital": "",
+        "date": "",
+        "vaccineName": "",
+        "status": false
+      },
+      "id": 4
+    },
+    {
+      "name": "tu4",
+      "phone": "111111111",
+      "email": "tu4@gmail.com",
+      "password": "tu4",
+      "loginStatus": false,
+      "signupStatus": true,
+      "dose1": {
+        "hospital": "",
+        "date": "",
+        "vaccineName": "",
+        "status": false
+      },
+      "dose2": {
+        "hospital": "",
+        "date": "",
+        "vaccineName": "",
+        "status": false
+      },
+      "id": 5
+    },
+    {
+      "name": "tu5",
+      "phone": "222222222",
+      "email": "tu5@gmail.com",
+      "password": "tu5",
+      "loginStatus": false,
+      "signupStatus": true,
+      "dose1": {
+        "hospital": "",
+        "date": "",
+        "vaccineName": "",
+        "status": false
+      },
+      "dose2": {
+        "hospital": "",
+        "date": "",
+        "vaccineName": "",
+        "status": false
+      },
+      "id": 6
     }
   ]
 }
