@@ -1,4 +1,4 @@
-# dead-giants-6622
+# Medical Solutions
 
 <div align="center"  width="55" height="55">
   <img src="./medical-solutions/public/logo.png?raw=true" alt="html" width="120" height="120"/>
